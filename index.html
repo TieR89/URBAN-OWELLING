@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URBAN OWELLING</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <nav>
+            <ul>
+              <li>
+                <a href="#" class="lang-ru active">Доставка и оплата</a
+                ><a href="#" class="lang-en">Delivery and Payment</a>
+              </li>
+              <li>
+                <a href="#" class="lang-ru active">Гарантия и возврат</a
+                ><a href="#" class="lang-en">Warranty and Return</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="lang-switch">
+            <a href="#" onclick="toggleLanguage()">EN</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="container">
+          <div class="logo"><img src="./img/logo.svg" alt="Logo" /></div>
+          <nav class="desktop-nav">
+            <ul>
+              <li>
+                <a href="#" class="lang-ru">КАТАЛОГ</a
+                ><a href="#" class="lang-en">CATALOG</a>
+              </li>
+              <li>
+                <a href="#" class="lang-ru">О КОМПАНИИ</a
+                ><a href="#" class="lang-en">ABOUT</a>
+              </li>
+              <li>
+                <a href="#" class="lang-ru">КОНТАКТЫ</a
+                ><a href="#" class="lang-en">CONTACTS</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu-toggle">
+            <span>______</span>
+            <span>______</span>
+            <span>______</span>
+          </div>
+          <div class="search">
+            <input type="text" placeholder="Лампы" />
+            <button><img src="./img/search-icon.svg" alt="Поиск" /></button>
+          </div>
+          <div class="cart">
+            <span class="lang-ru">Корзина</span>
+            <span class="lang-en">Cart</span>
+            <span class="cart-count">3</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1 class="search-results lang-ru">Результаты поиска</h1>
+        <h1 class="search-results lang-en">Search Results</h1>
+        <div class="product-grid">
+          <!-- Повторяющийся блок товара (8 раз) -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./img/pic_1.png" alt="::НАЗВАНИЕ_ТОВАРА::" />
+              <div class="product-overlay">
+                <button class="details-button lang-ru">Подробнее</button>
+                <button class="details-button lang-en">Details</button>
+              </div>
+            </div>
+            <h3>Встраиваемый светильник Markt</h3>
+            <p class="price">3 490 ₽</p>
+            <p class="old-price">5 060 ₽</p>
+            <span class="sale-badge lang-ru">Акция</span>
+            <span class="sale-badge lang-en">Sale</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./img/pic_2.png" alt="::НАЗВАНИЕ_ТОВАРА::" />
+              <div class="product-overlay">
+                <button class="details-button lang-ru">Подробнее</button>
+                <button class="details-button lang-en">Details</button>
+              </div>
+            </div>
+            <h3>Линейный светильник ARG</h3>
+            <p class="price">6 700 ₽</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./img/pic_3.png" alt="::НАЗВАНИЕ_ТОВАРА::" />
+              <div class="product-overlay">
+                <button class="details-button lang-ru">Подробнее</button>
+                <button class="details-button lang-en">Details</button>
+              </div>
+            </div>
+            <h3>Сведодиодный светильник</h3>
+            <p class="price">5 060 ₽</p>
+            <p class="old-price">6 060 ₽</p>
+            <span class="sale-badge lang-ru">Акция</span>
+            <span class="sale-badge lang-en">Sale</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./img/pic_4.png" alt="::НАЗВАНИЕ_ТОВАРА::" />
+              <div class="product-overlay">
+                <button class="details-button lang-ru">Подробнее</button>
+                <button class="details-button lang-en">Details</button>
+              </div>
+            </div>
+            <h3>Встраиваемый светильник Markt</h3>
+            <p class="price">3 490 ₽</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./img/pic_5.png" alt="::НАЗВАНИЕ_ТОВАРА::" />
+              <div class="product-overlay">
+                <button class="details-button lang-ru">Подробнее</button>
+                <button class="details-button lang-en">Details</button>
+              </div>
+            </div>
+            <h3>Линейный светильник ARG</h3>
+            <p class="price">6 700 ₽</p>
+            <p class="old-price">6 060 ₽</p>
+            <span class="sale-badge lang-ru">Акция</span>
+            <span class="sale-badge lang-en">Sale</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./img/pic_6.png" alt="::НАЗВАНИЕ_ТОВАРА::" />
+              <div class="product-overlay">
+                <button class="details-button lang-ru">Подробнее</button>
+                <button class="details-button lang-en">Details</button>
+              </div>
+            </div>
+            <h3>Сведодиодный светильник</h3>
+            <p class="price">5 060 ₽</p>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./img/pic_7.png" alt="::НАЗВАНИЕ_ТОВАРА::" />
+              <div class="product-overlay">
+                <button class="details-button lang-ru">Подробнее</button>
+                <button class="details-button lang-en">Details</button>
+              </div>
+            </div>
+            <h3>Встраиваемый светильник Markt</h3>
+            <p class="price">3 490 ₽</p>
+            <p class="old-price">6 060 ₽</p>
+            <span class="sale-badge lang-ru">Акция</span>
+            <span class="sale-badge lang-en">Sale</span>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./img/pic_8.png" alt="::НАЗВАНИЕ_ТОВАРА::" />
+              <div class="product-overlay">
+                <button class="details-button lang-ru">Подробнее</button>
+                <button class="details-button lang-en">Details</button>
+              </div>
+            </div>
+            <h3>Линейный светильник ARG</h3>
+            <p class="price">6 700 ₽</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-column">
+          <div class="logo"><img src="./img/logo_white.svg" alt="Logo" /></div>
+          <div class="privacy-text">
+            Этот сайт защищен от спама службой reCAPTCHA Google. Политика
+            конфиденциальности/Условия предоставления услуг
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="lang-ru">Адрес</h4>
+          <h4 class="lang-en">Address</h4>
+          <p>Текст, Текст, Текст</p>
+          <br />
+          <h4 class="lang-ru">Контакты</h4>
+          <h4 class="lang-en">Contacts</h4>
+          <p>Email: urban.dwelling@yandex.com</p>
+          <p class="lang-ru">Телефон: 8 (999) 999-99-99</p>
+          <p class="lang-en">Phone: 8 (999) 999-99-99</p>
+        </div>
+        <div class="footer-column">
+          <h4 class="lang-ru">Услуги</h4>
+          <h4 class="lang-en">Services</h4>
+          <p class="lang-ru">Каталог</p>
+          <p class="lang-en">Catalog</p>
+          <br />
+          <p class="lang-ru">О компании</p>
+          <p class="lang-en">About Company</p>
+          <p class="lang-ru">Контакты</p>
+          <p class="lang-en">Contacts</p>
+          <p class="lang-ru">Доставка и оплата</p>
+          <p class="lang-en">Delivery and payment</p>
+          <p class="lang-ru">Гарантия и возврат</p>
+          <p class="lang-en">Warranty and Returns</p>
+        </div>
+        <div class="footer-column-last">
+          <h4 class="lang-ru">Публичная оферта</h4>
+          <h4 class="lang-en">Public Offer</h4>
+          <br />
+          <p class="lang-ru">Политика персональных данных</p>
+          <p class="lang-en">Privacy Policy</p>
+          <br />
+          <p><img src="./img/pay_logo.svg" alt="::PAY::" /></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
